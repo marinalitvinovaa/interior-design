@@ -1,0 +1,62 @@
+.main-screen {
+  &__inner {
+    padding: 50px 0 40px;
+  }
+  &__title {
+    font-family: 'Resagokr', sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $blackTxt;
+    margin-bottom: 20px;
+  }
+  &__text {
+    max-width: 365px;
+    margin-bottom: 20px;
+    margin-left: 246px;
+  }
+  &__link {
+      display: flex;
+      align-items: center;
+      margin-left: 246px;
+      gap: 10px;
+    }
+    &__bg {
+      min-height: 60vh;
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    .main-screen__title {
+      font-size: 46px;
+    }
+    .main-screen__text, .main-screen__link {
+      margin-left: 207px;
+    }
+  }
+
+  @media (max-width: 728px) {
+    .main-screen__inner {
+      padding: 28px 0 30px;
+    }
+    .main-screen__bg {
+      min-height: 500px;
+    }
+
+  }
+  @media (max-width: 550px) {
+    .main-screen__inner {
+      padding: 20px 0 25px;
+    }
+
+    .main-screen__text, .main-screen__link {
+      margin-left: 0;
+    }
+    .main-screen__bg {
+      min-height: 360px;
+    }
+
+  }
